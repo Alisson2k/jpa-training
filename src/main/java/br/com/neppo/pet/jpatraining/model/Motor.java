@@ -10,6 +10,7 @@ public class Motor implements Serializable {
 
     @Id
     @Column( name = "ID" )
+    @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Long id;
 
     @Column( name = "POWER", length = 20, nullable = false )

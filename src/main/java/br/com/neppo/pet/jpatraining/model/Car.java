@@ -10,6 +10,7 @@ public class Car implements Serializable {
 
     @Id
     @Column( name = "ID" )
+    @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Long id;
 
     @Column( name = "BRAND" )

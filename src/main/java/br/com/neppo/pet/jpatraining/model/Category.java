@@ -1,9 +1,6 @@
 package br.com.neppo.pet.jpatraining.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -12,6 +9,7 @@ public class Category implements Serializable {
 
     @Id
     @Column( name = "ID" )
+    @GeneratedValue( strategy = GenerationType.IDENTITY )
     private Long id;
 
     @Column( name = "NAME" )
